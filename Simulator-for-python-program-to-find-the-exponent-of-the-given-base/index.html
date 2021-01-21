@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script src="behaviour.js"></script>
+	<title>Exponent of given number</title>
+</head>
+
+<body>
+<div id="header"><span id="head">Exponent of given number</span>
+</div>
+<div class="inputDivision" id="inputDivision">
+	<div class="inputDivisionTitle"><div class="initializePic"></div><div class="initializeText">Initialize</div></div>
+	<div class="inputDivisionBody">
+		<div class="arraySizeInputBlock">
+			<div class="arraySizeText">Enter base number</div>
+			<input class="arraySizeInputField" id="inputFirstNum" type="text"/>
+
+			<div class="arraySizeText">Enter exponent of base number</div>
+			<input class="arraySizeInputField" id="inputSecondNum" type="text"/>
+
+
+		</div>
+
+
+		<div class="show, radioButtonDivision" id="inputButtonRadio">
+
+    	          <div class="buttonHolder">
+    	          	<button class="buttonDisable startButton" disabled="" id="btnStart">Start</button>
+    	          	<button class="buttonDisable nextButton" disabled="" id="btnNext">Next</button>
+    	          	<div style="float: left; height: 15px; width: 100%;"></div>
+    	          	<button class="button" id="reloadbtn" onclick="reloadbn()" style="font-size: 1.4em;">Another Computation</button>
+    	          </div>
+    	</div>
+
+    </div><!-- end of inputDivisionBody -->
+</div><!-- end of inputDivision -->
+<!--#####################################-->
+<div class="executionDivision" id="executionDivision">
+	<div class="executionDivisionTitle"><div class="executionPic"></div><div class="executionText">Step Execution</div></div>
+	<div class="stepExecutionDisplay">
+		<div class="hide" id="1-dArray">
+
+			<div id="line1" style="font-size: 1.2em;"> b=int(input()) </div>
+			<div id="line2" style="font-size: 1.2em;"> e=int(input())</div>
+			<div id="line3" style="font-size: 1.2em;"> result=1</div>
+			<div id="line03" style="font-size: 1.2em;"> if e>0:</div>
+			<div id="line4" style="padding-left:8%; font-size: 1.2em;"> for i in range(e): </div>
+			<div id="line5" style="padding-left:16%; font-size: 1.2em;"> result=result*b </div>
+			
+			<div id="line06" style="font-size: 1.2em;"> else:</div>
+			<div id="line07" style="padding-left:8%; font-size: 1.2em;"> for i in range(abs(e)): </div>
+			<div id="line08" style="padding-left:16%; font-size: 1.2em;"> result=result*(1/b) </div>
+
+			<div id="line6" style="font-size: 1.2em;"> print("Exponent of given base is",result) </div>
+
+
+<!-- b=int(input("enter base value"))
+e=int(input("enter exponent value"))
+result=1
+if e>0:
+    for i in range(e):
+        result= result*b
+else:
+    for i in range((abs(e))):
+        result=result*(1/b)
+    print(result) -->
+
+		</div><!-- end of 1-dArray -->
+	</div><!-- end of stepExecutionDisplay -->
+</div><!-- end of executionDivision -->
+<!--#####################################-->
+
+<div class="outputDivision" id="outputDivision"> 
+	<div class="outputDivisionTitle"><div class="outputPic"></div><div class="outputText">Code Output</div></div>
+	<div class="resultDisplay" id="resultDisplay">
+
+		<div class="sortingDivision" id="sortingDiv">
+			<div class="currentKeyValueLine">
+				<div class="currentKeyValue"></div>
+				<div class="currentKeyValue"></div>
+							<div class="currentKeyValue" style="font-size: x-large;">Base</div>
+										<div class="currentKeyValue"></div>
+													<div class="currentKeyValue" style="font-size: x-large;">Exponent</div>
+													<div class="currentKeyValue"></div>
+													<div class="currentKeyValue"></div>
+			</div>
+			<div class="currentKeyValue2"></div>
+			<div class="currentKeyValue" id="boxNum1"></div>
+			<div class="currentKeyValue"></div>
+			<div class="currentKeyValue" id="boxNum2"></div>
+			<div class="currentKeyValue2"></div>
+			<!-- <div id="about"><span id="part1">Base</span><span id="part2">Exponent</span></div> -->
+			<div id="showIter"></div>
+			<div class="currentKeyValueLine" style="margin-bottom: 15px;">
+				<div class="currentKeyValue"></div>
+				<div class="currentKeyValue"></div>
+				<div class="currentKeyValue"></div>
+								<div class="currentKeyValue" style="font-size: initial; width: fit-content">Iterations left</div>
+				
+				<div class="currentKeyValue"></div>
+				<div class="currentKeyValue"></div>
+			</div>
+			<div style="float: left; height: 3%; width: 3%;"></div>
+			<div class="currentKeyValue" id="boxNumResult"></div>
+			<div class="currentKeyValue" id="boxOperator"></div>
+			<div class="currentKeyValue" id="boxBase"></div>
+			<div class="currentKeyValue" id="boxEqual"></div>
+			<div class="currentKeyValue" id="boxNumResultU"></div>
+			<div style=" height: 20%; width: 100%;  margin-top: 83px;"></div>
+			<div id="print" ></div>
+		</div>
+
+	</div><!-- end of resultDisplay -->
+</div><!-- end of outputDivision -->
+
+</body></html>
+<script type="text/javascript">
+	
+
+</script>
